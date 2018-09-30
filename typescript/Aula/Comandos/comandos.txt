@@ -1,0 +1,10 @@
+//verificar status do git (se possui coisas para enviar)
+d:
+cd Projeto\EasyFood
+git status
+
+//comandos para enviar
+git init
+git add .
+git commit -m "nome commit"
+git push -u origin master

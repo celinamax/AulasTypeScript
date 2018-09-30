@@ -1,0 +1,7 @@
+ATOM-TYPESCRIPT:
+{
+"compileOnSave": true,
+"compilerOptions":{
+  "outDir": "dist"
+ }
+}
