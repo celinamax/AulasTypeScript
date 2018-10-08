@@ -1,70 +1,39 @@
 class Spacecraft {
-   propulsor: string
-   constructor (propulsor: string) {
-     this.propulsor = propulsor
-   }
+
+  constructor (public propulsor : string) {}
+
+  jumpIntoHyperspace() {
+    console.log(`Entering hyperspace with ${this.propulsor}`)
+
+  }
 }
-jumpIntoHyperspace(){
-  console.log("Entering hyperspace with" + this.propulsor)
-}
+let ship = new Spacecraft('hyperdrive')
+ship.jumpIntoHyperspace()
 
-let falcon = new Spacecraft ("hyperdrive")
+class MillenniumFalcon extends Spacecraft implements Containership{
 
-falcon.jumpIntoHyperspace()
-  Entering hyperspace with hyperdrive
-
-//criando uma classe com codigo reduzido
-
-class Spacecraft {
-
-  constructor (public propulsor: string){}
-}
-
-//conceito de herança
-
-class MillenniumFalcon extends Spacecraft{
-
+  cargoContainers : number
   constructor() {
-    super ("hyperdrive")
-  }
-
-
-jumpIntoHyperspace(){
-  if (Math.random() >= 0.5) {
-    super.jumpIntoHyperspace()
-  }else {console.log("Failed")}
-}
-
-}
-
-//O que são interfaces? Definem contratos
-
-interface ContainerShip {
-  cargoContainers:number
-}
-
-class MillenniumFalcon extends Spacecraft implements ContainerShip {
-
-
-      cargoContainers: number
-      constructor() {
-        super("hyperdrive")
-        this.cargoContainer = 4
-      }
+    super('hyperdrive')
+    this.cargoContainers = 4
 
   }
+  jumpIntoHyperspace(){
+    if (Math.random() >=0.5){
+      super.jumpIntoHyperspace()
+    }else {console.log('Failed to jump into hyperspace')}
 
-function goodForTheJob(ship: ContainerShip): boolean {
-  return Ship.cargoContainers > 2
-}
-
-let falcon = new MillenniumFalcon()
-console.log(goodForTheJob(falcon))
-> true
-
-
-  //interface
-
-  interface Smugglership extends Containership {
-    hidden containers: number
+    }
   }
+
+  let falcon = new MillenniumFalcon()
+  falcon.jumpIntoHyperspace()
+
+  interface Containership {
+
+    cargoContainers : number
+
+  }
+  let goodForTheJob = ( ship : Containership ) => ship.cargoContainers > 2
+
+  console.log(`Is falcon good  for the job? ${goodForTheJob( falcon ) ? 'yes': 'no'}`)
