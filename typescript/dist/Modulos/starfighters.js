@@ -18,15 +18,14 @@ var MillenniumFalconModulo = /** @class */ (function (_super) {
         _this.cargoContainers = 4;
         return _this;
     }
+    MillenniumFalconModulo.prototype.jumpIntoHyperspaceModulo = function () {
+        if (Math.random() >= 0.5) {
+            _super.prototype.jumpIntoHyperspaceModulo.call(this);
+        }
+        else {
+            console.log('Failed to jump into hyperspace');
+        }
+    };
     return MillenniumFalconModulo;
 }(base_ships_1.SpacecraftModulo));
-jumpIntoHyperspaceModulo();
-{
-    if (Math.random() >= 0.5) {
-        _super.jumpIntoHyperspaceModulo.call(this);
-    }
-    else {
-        console.log('Failed to jump into hyperspace');
-    }
-    export { MillenniumFalconModulo };
-}
+exports.MillenniumFalconModulo = MillenniumFalconModulo;

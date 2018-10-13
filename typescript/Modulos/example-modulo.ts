@@ -1,14 +1,10 @@
-import {SpacecraftModulo, ContainershipModulo} from './base-ships'
-import {MillenniumFalconModulo} from './starfighters'
+import {SpacecraftModulo} from './SpacecraftModulo'
+import {ContainershipModulo} from './ContainershipModulo'
+import {MillenniumFalconModulo} from './MillenniumFalconModulo'
 
 let falcon = new MillenniumFalconModulo()
 falcon.jumpIntoHyperspaceModulo()
 
-interface ContainershipModulo {
-
-  cargoContainers : number
-
-}
 let goodForTheJob = ( ship : ContainershipModulo ) => ship.cargoContainers > 2
 
 console.log(`Is falcon good  for the job? ${goodForTheJob( falcon ) ? 'yes': 'no'}`)
