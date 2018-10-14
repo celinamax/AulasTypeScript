@@ -1,4 +1,7 @@
-//verificar status do git (se possui coisas para enviar)
+//acessar pasta do Projeto
+cd Projeto\EasyFood\typescript\jedi-academy
+
+//verificar status do git (se possui coisas para enviar
 d:
 cd Projeto\EasyFood
 git status
@@ -8,3 +11,63 @@ git init
 git add .
 git commit -m "nome commit"
 git push -u origin master
+
+//instalando o compilador do typescript
+npm install typescript -g
+
+//instalando o AngularCli
+npm install -g @angular/cli
+
+//instalando o compilador
+npm install typescript -g
+
+//compilar arquivo manualmente
+tsc app.ts
+
+//monitorar  mudança nos arquivos
+tsc -w
+
+//conferindo a versão instalada do compilador
+tsc -v
+
+ //inicializando a aplicaçao node package mananger
+ npm init -f
+
+ //importando biblioteca javascript em uma aplicaçao typescript
+ npm install --save lodash@4.14
+
+ //importando definições de tipos do lodash
+ npm install --save-dev @types/lodash@4.14
+
+ //Configurando o Atom para detectar os plugins
+ "typeRoots": [
+   "node_modules/@types"
+ ]
+
+ //importando o pacote lodash
+ import * as _from 'lodash'
+
+ //não consegui rodar o comandos
+ node dist/app
+
+
+
+ //Comando para limpar o console
+ cls
+
+ //comando para parar console
+ ctrc + c
+
+ //tem um arquivo do package-lock.json a mais na minha aplicaçao
+
+//inicializando AngularCli
+ng -v
+
+ //Gerando o projeto no AngularCli
+ ng new jedi-academy --prefix=jad
+
+ //startando servidor de desenvolvimento
+ ng serve
+
+//abrir o editor Atom dentra da pasta jedi-academy
+atom .

@@ -19,6 +19,17 @@ var Spacecraft = /** @class */ (function () {
 }());
 var ship = new Spacecraft('hyperdrive');
 ship.jumpIntoHyperspace();
+var Carro = /** @class */ (function () {
+    function Carro(marca) {
+        this.marca = marca;
+    }
+    Carro.prototype.ligar = function () {
+        console.log("Carro " + this.marca + " ligado");
+    };
+    return Carro;
+}());
+var veiculo = new Carro("Ecosport");
+veiculo.ligar();
 var MillenniumFalcon = /** @class */ (function (_super) {
     __extends(MillenniumFalcon, _super);
     function MillenniumFalcon() {

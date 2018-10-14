@@ -10,7 +10,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-var base_ships_1 = require("./base-ships");
+var SpacecraftModulo_1 = require("./SpacecraftModulo");
 var MillenniumFalconModulo = /** @class */ (function (_super) {
     __extends(MillenniumFalconModulo, _super);
     function MillenniumFalconModulo() {
@@ -18,15 +18,14 @@ var MillenniumFalconModulo = /** @class */ (function (_super) {
         _this.cargoContainers = 4;
         return _this;
     }
+    MillenniumFalconModulo.prototype.jumpIntoHyperspaceModulo = function () {
+        if (Math.random() >= 0.5) {
+            _super.prototype.jumpIntoHyperspaceModulo.call(this);
+        }
+        else {
+            console.log('Failed to jump into hyperspace');
+        }
+    };
     return MillenniumFalconModulo;
-}(base_ships_1.SpacecraftModulo));
+}(SpacecraftModulo_1.SpacecraftModulo));
 exports.MillenniumFalconModulo = MillenniumFalconModulo;
-jumpIntoHyperspaceModulo();
-{
-    if (Math.random() >= 0.5) {
-        _super.jumpIntoHyperspaceModulo.call(this);
-    }
-    else {
-        console.log('Failed to jump into hyperspace');
-    }
-}
