@@ -16,6 +16,7 @@ var AppModule = /** @class */ (function () {
         core_1.NgModule({
             declarations: [
                 app_component_1.AppComponent
+                //colocar os componentes da aplicação
             ],
             imports: [
                 platform_browser_1.BrowserModule

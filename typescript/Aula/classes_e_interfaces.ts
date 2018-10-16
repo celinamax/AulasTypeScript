@@ -10,20 +10,6 @@ class Spacecraft {
 let ship = new Spacecraft('hyperdrive')
 ship.jumpIntoHyperspace()
 
-class Carro {
-  constructor (public marca : string){
-
-  }
-  ligar(){
-    console.log(`Carro ${this.marca} ligado`)
-  }
-
-}
-let veiculo = new Carro("Ecosport")
-veiculo.ligar()
-
-
-
 class MillenniumFalcon extends Spacecraft implements Containership{
 
   cargoContainers : number

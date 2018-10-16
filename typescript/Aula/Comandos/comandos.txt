@@ -60,14 +60,23 @@ tsc -v
 
  //tem um arquivo do package-lock.json a mais na minha aplicaçao
 
-//inicializando AngularCli
+//visualizar a versão AngularCli
 ng -v
 
  //Gerando o projeto no AngularCli
  ng new jedi-academy --prefix=jad
 
- //startando servidor de desenvolvimento
+ //startando o projeto
  ng serve
 
 //abrir o editor Atom dentra da pasta jedi-academy
 atom .
+
+//Comando p/ abrir a pasta direto no CMD
+SHIFT + BOTAO DIREITO NA PASTA  e dps seleciona o comando abrir janela de comando aqui na própria pasta
+
+//link de comandos para HTML/CSS
+https://docs.emmet.io/cheat-sheet/
+
+//criando o 1º componente
+ng g c header --spec=false
