@@ -58,8 +58,6 @@ tsc -v
  //comando para parar console
  ctrc + c
 
- //tem um arquivo do package-lock.json a mais na minha aplicaçao
-
 //visualizar a versão AngularCli
 ng -v
 

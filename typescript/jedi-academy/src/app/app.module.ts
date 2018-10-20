@@ -5,13 +5,14 @@ import {HttpModule} from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { StudentComponent } from './student/student.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    StudentComponent
 
-    //colocar os componentes da aplicação
   ],
   imports: [
     BrowserModule
